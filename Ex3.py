@@ -58,7 +58,6 @@ def quick_sort(arr):
     middle = [x for x in arr if x == razdelarr]
     right = [x for x in arr if x > razdelarr]
     return quick_sort(left) + middle + quick_sort(right)
-
 n = int(input("Введите число строк: "))
 m = int(input("Введите число столбцов: "))
 maxCount = int(input("Введите максимальное число: "))
@@ -76,7 +75,7 @@ def Vibor():
     for Copy in sortmatrix:
         print(Copy)
     start_time = time.time()
-    print(f"--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
+    print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 ###
 def Vstavka():
     print("Сортировка вставкой:")
@@ -85,7 +84,7 @@ def Vstavka():
     for stroki in Newmatrix:
         print(stroki)
     start_time = time.time()
-    print(f"--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
+    print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 
 def bubble():
     print("Сортировка пузырьком:")
@@ -94,7 +93,7 @@ def bubble():
     for stroki in Newmatrix:
         print(stroki)
     start_time = time.time()
-    print(f"--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
+    print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 def Shell():
     print("Сортировка Шелла:")
     for stroki in Newmatrix:
@@ -102,7 +101,7 @@ def Shell():
     for stroki in Newmatrix:
         print(stroki)
     start_time = time.time()
-    print(f"--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
+    print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 def quick():
     print("быстрая сортировка:")
     for stroki in Newmatrix:
@@ -110,7 +109,7 @@ def quick():
     for stroki in Newmatrix:
         print(stroki)
     start_time = time.time()
-    print(f"--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
+    print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 ####
 print(Vibor())
 print(Vstavka())
