@@ -17,8 +17,8 @@ def Vibor_sort(matrix):
                 min_idx = i
                 for j in range(i + 1, n):
                     if arr[j] < arr[min_idx]:
-                        minn= j
-                arr[i], arr[minn] = arr[minn], arr[i]
+                        Min= j
+                arr[i], arr[Min] = arr[Min], arr[i]
 def Vstavka_sort(arr):
     n = len(arr)
     for i in range(1, n):
