@@ -14,9 +14,9 @@ def Vibor_sort(matrix):
         for arr in matrix:
             n = len(arr)
             for i in range(n):
-                min_idx = i
+                Min = i
                 for j in range(i + 1, n):
-                    if arr[j] < arr[min_idx]:
+                    if arr[j] < arr[Min]:
                         Min= j
                 arr[i], arr[Min] = arr[Min], arr[i]
 def Vstavka_sort(arr):
@@ -69,46 +69,46 @@ for stroki in Newmatrix:
     print(stroki)
 #### Сортировка выбором
 def Vibor():
+    start_time = time.time()
     sortmatrix = [Copy[:] for Copy in Newmatrix]  #копия матрицы
     Vibor_sort(sortmatrix)
     print("Сортировка выбором:")
     for Copy in sortmatrix:
         print(Copy)
-    start_time = time.time()
     print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 ###
 def Vstavka():
+    start_time = time.time()
     print("Сортировка вставкой:")
     for stroki in Newmatrix:
         Vstavka_sort(stroki)
     for stroki in Newmatrix:
         print(stroki)
-    start_time = time.time()
     print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 
 def bubble():
+    start_time = time.time()
     print("Сортировка пузырьком:")
     for stroki in Newmatrix:
         bubble_sort(stroki)
     for stroki in Newmatrix:
         print(stroki)
-    start_time = time.time()
     print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 def Shell():
+    start_time = time.time()
     print("Сортировка Шелла:")
     for stroki in Newmatrix:
         shell_sort(stroki)
     for stroki in Newmatrix:
         print(stroki)
-    start_time = time.time()
     print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 def quick():
+    start_time = time.time()
     print("быстрая сортировка:")
     for stroki in Newmatrix:
         quick_sort(stroki)
     for stroki in Newmatrix:
         print(stroki)
-    start_time = time.time()
     print("--- {0} ms ---".format(round((time.time() - start_time) * 1000)))
 ####
 print(Vibor())
